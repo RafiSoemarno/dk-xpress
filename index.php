@@ -1,2 +1,2 @@
 <!-- TODO: redirect to relevant pages -->
-<?php header("Location: welcome.php"); ?>
+<?php header("Location: model/orders.php"); ?>

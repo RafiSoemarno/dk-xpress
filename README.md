@@ -12,7 +12,7 @@ Model Files:
 - login.php (Rafi) - Modal(?) for login, merge with welcome - INCOMP
 - register.php (Verrel) - Modal(?) for registration, merge with welcome - INCOMP
 - account.php (Unassigned) - Show/edit user account info - PLANNED
-- orders.php (Unassigned) - Show/filter/add delivery orders - PLANNED
+- orders.php (Rafi) - Show/filter/add delivery orders - IN PROG
 
 Controller Files:
 - userControl.php (Rafi) - Manages requests for users - INCOMP
