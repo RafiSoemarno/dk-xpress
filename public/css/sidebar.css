@@ -1,0 +1,67 @@
+.overlay {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+}
+
+#sidebar {
+  position: fixed;
+  width: 100px;
+  right: 0;
+  z-index: 2;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#button {
+  transition: 0.3s;
+  height: 50px;
+}
+
+#navlink {
+    opacity: 0;
+    transition: 1s;
+}
+
+#navlink li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgba(200, 200, 200, 1);
+}
+
+#intro {
+  background-image: url("../img/intro-img.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title {
+  position: relative;
+  top: 0;
+}
+
+#about-img {
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.underline {
+  width: 100px;
+  max-height: 50px;
+  margin-top: 50px;
+}
+
+#howto {
+  background-image: url("../img/howto-img.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.step {
+  width: 50px;
+  height: 50px;
+}
