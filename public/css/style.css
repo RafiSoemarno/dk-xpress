@@ -1,9 +1,4 @@
-.overlay {
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0);
-  transition: 0.5s;
-}
-
+/* NAVIGATION ITEMS */
 #sidebar {
   position: fixed;
   width: 100px;
@@ -19,8 +14,8 @@
 }
 
 #navlink {
-    opacity: 0;
-    transition: 1s;
+  opacity: 0;
+  transition: 1s;
 }
 
 #navlink li {
@@ -29,6 +24,35 @@
   color: rgba(200, 200, 200, 1);
 }
 
+#account {
+  transition: 0.5s;
+}
+
+/* MEDIA QUERY TOPNAV OR SIDENAV
+@media only screen and (max-width: 1000px) {
+#navbar {
+display: none;
+}
+}
+
+@media only screen and (min-width: 1001px) {
+#navbar {
+position: fixed;
+}
+
+#sidebar {
+display: none;
+}
+}
+DEPRECATED */
+
+.overlay {
+  background-color: rgba(0,0,0,0);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+/* PAGE ITEMS */
 #intro {
   background-image: url("../img/intro-img.jpg");
   background-attachment: fixed;
@@ -64,4 +88,16 @@
 .step {
   width: 50px;
   height: 50px;
+}
+
+#filter {
+  height: 50px;
+}
+
+#orderbg {
+  background-image: url("../img/intro-img.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
