@@ -14,7 +14,13 @@
         <div class="card rounded-3 shadow">
           <h5 class="card-header">
             <?= $delivery['delivery_id']; ?>
-            <span class="badge bg-warning float-end" id="statusBadge">Status</span>
+            <?php if($delivery['status'] == 'Processing') { ?>
+              <span class="badge float-end bg-warning" id="statusBadge">Processing</span>
+            <?php } else if($delivery['status'] == 'Delivered') { ?>
+              <span class="badge float-end bg-primary" id="statusBadge">En Route</span>
+            <?php } else if($delivery['status'] == 'En Route') { ?>
+              <span class="badge float-end bg-success" id="statusBadge">Delivered</span>
+            <?php } ?>
           </h5>
           <img src="<?= $delivery['picture']; ?>" style="object-fit: cover;" alt="Image">
           <ul class="list-group list-group-flush">
@@ -22,7 +28,7 @@
               <h5 class="card-title">Description</h5>
               <p class="card-text"><?= $delivery['description']; ?></p>
             </li>
-            <li class="list-group-item bg-warning">
+            <li class="list-group-item">
               <h5 class="card-title">Status</h5>
               <p class="card-text"><?= $delivery['status']; ?></p>
             </li>

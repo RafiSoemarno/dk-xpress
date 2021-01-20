@@ -32,7 +32,7 @@
   <div class="overlay position-fixed min-vw-100 min-vh-100" onclick="toggleSideNav()"></div>
   <!-- LOGIN FORM -->
   <div id="loginform" class="modal fade" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-md-down">
+    <div class="modal-dialog modal-dialog-centered modal-md modal-fullscreen-md-down">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Sign-in</h5>
