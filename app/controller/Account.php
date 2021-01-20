@@ -23,18 +23,19 @@ class Account extends Controller {
     session_start();
     if($user = $this->model('Account_model')->userAuth()) {
       $_SESSION['activeUser'] = $user;
-      header('Location: ../');
+      unset($_SESSION['loginError']);
+      header('Location: '.BASEURL);
       exit;
     } else {
       $_SESSION['loginError'] = 'Invalid email or password.';
-      header('Location: ../');
+      header('Location: '.BASEURL);
       exit;
     }
   }
 
   public function logout() {
     session_start();
-    header('Location: ../');
+    header('Location: '.BASEURL);
     session_unset();
     exit;
   }

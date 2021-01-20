@@ -8,14 +8,11 @@ class Delivery_model {
     $this->db = new Database;
   }
 
-  public function getData() {
-    $this->db->query('SELECT * FROM ' . $this->table);
+  public function getDeliveryByUser() {
+    session_start();
+    $id = $_SESSION['activeUser'];
+    $this->db->query('SELECT * FROM ' . $this->table . ' WHERE user_id = :id');
+    $this->db->bind(':id', $id['user_id']);
     return $this->db->resultSet();
-  }
-
-  public function getDataById($id) {
-    $this->db->query('SELECT * FROM ' . $this->table . ' WHERE delivery_id:id');
-    $this->db->bind('id', $id); // use bind instead of directly in statement to avoid SQL Injection
-    return $this->db->single();
   }
 }

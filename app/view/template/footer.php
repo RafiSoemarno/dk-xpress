@@ -4,8 +4,8 @@
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<script src="https://localhost/dk-xpress/public/libs/aos-master/dist/aos.js" type="text/javascript"></script>
-<script src="https://localhost/dk-xpress/public/js/main.js" type="text/javascript"></script>
+<script src="<?= BASEURL; ?>/libs/aos-master/dist/aos.js" type="text/javascript"></script>
+<script src="<?= BASEURL; ?>/js/main.js" type="text/javascript"></script>
 <!-- OPEN LOGIN FORM -->
 <?php if(isset($_SESSION['loginError'])) { echo '<script type="text/javascript">new bootstrap.Modal(document.getElementById("loginform")).show()</script>'; } ?>
 <!-- INIT SCRIPTS -->
