@@ -17,7 +17,7 @@ class Delivery_model {
   }
 
   private function processPicture() {
-    $target_dir = BASEURL.'/img/';
+    $target_dir = 'upload/';
     $target_file = $target_dir . basename($_FILES["picture"]["name"]);
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
     move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file);
