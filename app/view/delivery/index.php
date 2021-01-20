@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4" id="orderContainer">
-    <?php foreach ($data['delivery'] as $delivery): ?>
+    <?php foreach($data['delivery'] as $delivery): ?>
       <div class="col" data-aos="fade-up">
         <div class="card rounded-3 shadow">
           <h5 class="card-header">

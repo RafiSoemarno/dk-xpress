@@ -1,6 +1,6 @@
 $(function() {
   $(".overlay").hide();
-  $("#account").hide().css("opacity", "0");
+  $("#account").hide();
 })
 
 function toggleSideNav() {
