@@ -9,4 +9,10 @@ class Delivery extends Controller {
     $this->view('delivery/index', $data);
     $this->view('template/footer');
   }
+
+  public function newOrder() {
+    $this->model('Delivery_model')->addOrder();
+    header('Location: '.BASEURL.'/delivery');
+    exit;
+  }
 }

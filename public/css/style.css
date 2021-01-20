@@ -29,6 +29,10 @@
   transition: 0.5s;
 }
 
+#neworder {
+  
+}
+
 /* MEDIA QUERY TOPNAV OR SIDENAV
 @media only screen and (max-width: 1000px) {
 #navbar {

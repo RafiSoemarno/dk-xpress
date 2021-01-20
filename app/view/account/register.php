@@ -19,7 +19,7 @@
         <label for="password">Confirm Password</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="addres" id="addres" placeholder="address" required>
+        <input type="text" class="form-control" name="address" id="address" placeholder="address" required>
         <label for="email">Full Address</label>
       </div>
       <div class="row row-cols-2 row-cols-md-3">

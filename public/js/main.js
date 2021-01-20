@@ -20,19 +20,4 @@ function toggleSideNav() {
     $("#navlink").hide().css("opacity", "0");
     $("#account").hide().css("opacity", "0");
   }
-
-  function register() {
-    var pass = $("#pass").value();
-    var confpass = $("#confpass").value();
-    var zip = $("#zip_code").value();
-    if(pass != confpass) {
-      alert("Passwords do not match.");
-      return false;
-    }
-    if(!isNaN(zip) && !isNaN(parseFloat(zip))) {
-      alert("Invalid ZIP code. ZIP code must be a number.");
-      return false;
-    }
-    return true;
-  }
 }

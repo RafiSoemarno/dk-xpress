@@ -2,8 +2,9 @@
 
 class Account extends Controller {
   public function index() {
+    session_start();
     $data['title'] = 'Account';
-    // $data['delivery'] = $this->model('Account_model')->getData();
+    $data['user'] = $this->model('Account_model')->getUserById($_SESSION['activeUser']['user_id']);
     $this->view('template/header', $data);
     $this->view('template/navigation', $data);
     $this->view('account/index', $data);
@@ -17,6 +18,12 @@ class Account extends Controller {
     $this->view('account/register');
     session_unset();
     $this->view('template/footer');
+  }
+
+  public function newAcc() {
+    $this->model('Account_model')->newUser();
+    header('Location: '.BASEURL);
+    exit;
   }
 
   public function login() {
