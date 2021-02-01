@@ -1,11 +1,9 @@
 <?php
-
-class Home extends Controller {
-  public function index() {
-    $data['title'] = 'Home';
-    $this->view('template/header', $data);
-    $this->view('template/navigation', $data);
-    $this->view('home/index', $data);
-    $this->view('template/footer');
+  class Home extends Controller {
+    public function index() {
+      $title = 'Donkey Express';
+      $view = ['modal/login', 'home/index'];
+      $this->fullview($title, $view);
+    }
   }
-}
+?>

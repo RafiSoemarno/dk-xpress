@@ -23,12 +23,12 @@
         <label for="email">Full Address</label>
       </div>
       <div class="row row-cols-2 row-cols-md-3">
-          <div class="col col-md-3">
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" name="zip_code" id="zip_code" placeholder="zip_code" required>
-              <label for="email">ZIP Code</label>
-            </div>
+        <div class="col col-md-3">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="zip_code" id="zip_code" placeholder="zip_code" required>
+            <label for="email">ZIP Code</label>
           </div>
+        </div>
         <div class="col">
           <div class="form-floating mb-3">
             <input type="text" class="form-control" name="region" id="region" placeholder="region" required>
@@ -56,11 +56,11 @@
           </div>
         </div>
       </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" required>
-      <label class="form-check-label" for="exampleCheck1">I have read and agree to the <a href="<?php BASEURL; ?>">terms</a> and <a href="<?php BASEURL; ?>">services.</a></label>
-    </div>
-    <button type="submit" class="btn btn-primary">Register</button>
-  </form>
-</div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" required>
+        <label class="form-check-label" for="exampleCheck1">I have read and agree to the <a href="<?php BASEURL; ?>">terms</a> and <a href="<?php BASEURL; ?>">services.</a></label>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
 </div>

@@ -3,11 +3,6 @@
   <h1 id="title" class="display-6 text-muted d-inline-block ms-4 mb-4 ps-4 border-3 border-start">Your Deliveries</h1>
 </div>
 <div id="orderbg" class="container-fluid px-3 py-4 min-vh-100">
-  <div id="filter" class="row mx-2 mb-4">
-    <div class="container-fluid bg-light rounded-3 d-flex align-items-stretch">
-      <button class="btn btn-warning rounded-3" type="button" data-bs-toggle="modal" data-bs-target="#neworder">SCHEDULE DELIVERY</button>
-    </div>
-  </div>
   <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4" id="orderContainer">
     <?php foreach($data['delivery'] as $delivery): ?>
       <div class="col" data-aos="fade-up">
@@ -22,7 +17,7 @@
               <span class="badge float-end bg-success" id="statusBadge">Delivered</span>
             <?php } ?>
           </h5>
-          <img src="<?= $delivery['picture']; ?>" style="object-fit: cover;" alt="Image">
+          <img src="<?= $delivery['picture']; ?>" style="object-fit: contain; max-height: 500px;" alt="Image">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <h5 class="card-title">Description</h5>
@@ -194,4 +189,5 @@
       </div>
     <?php endforeach; ?>
   </div>
+  <button class="btn btn-lg btn-warning rounded-3 position-fixed bottom-0 end-0 mb-4 me-4 text-light" type="button" data-bs-toggle="modal" data-bs-target="#neworder">SCHEDULE DELIVERY</button>
 </div>

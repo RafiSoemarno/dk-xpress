@@ -30,26 +30,8 @@
 }
 
 #neworder {
-  
-}
 
-/* MEDIA QUERY TOPNAV OR SIDENAV
-@media only screen and (max-width: 1000px) {
-#navbar {
-display: none;
 }
-}
-
-@media only screen and (min-width: 1001px) {
-#navbar {
-position: fixed;
-}
-
-#sidebar {
-display: none;
-}
-}
-DEPRECATED */
 
 .overlay {
   background-color: rgba(0,0,0,0);
@@ -59,7 +41,7 @@ DEPRECATED */
 
 /* PAGE ITEMS */
 #intro {
-  background-image: url("../img/intro-img.jpg");
+  background-image: url("../img/warehouse.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -83,7 +65,7 @@ DEPRECATED */
 }
 
 #howto {
-  background-image: url("../img/howto-img.jpg");
+  background-image: url("../img/trucks_aerial.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,7 +82,7 @@ DEPRECATED */
 }
 
 #orderbg {
-  background-image: url("../img/intro-img.jpg");
+  background-image: url("../img/warehouse.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

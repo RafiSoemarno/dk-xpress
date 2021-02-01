@@ -22,7 +22,7 @@
       </p>
     </div>
     <div class="col-4">
-      <img id="about-img" src="../public/img/about-img.jpg" alt="" class="w-100" data-aos="fade-up" data-aos-delay="600">
+      <img id="about-img" src="<?= BASEURL; ?>/public/img/truck_sunset.jpg" class="w-100" data-aos="fade-up" data-aos-delay="600">
     </div>
   </div>
 </div>
